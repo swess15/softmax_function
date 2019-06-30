@@ -47,7 +47,7 @@ nb_classes = 3
 # Weight와 Bias의 값을 모르기 때문에, tf.random_normal 라이브러리를 사용하여 랜덤값 삽입
 # tf.random_normal 라이브러리를 사용할 때는 제공되는 데이터의 Shape을 인수로 넣어야 한다
 # W = 4X3 Matrix에 데이터들의 난수가 채워지고
-# b = 1x3 Matrix(ventor)에 데이터들의 난수가 채워진다
+# b = 3x1 Matrix(ventor)에 데이터들의 난수가 채워진다
 # X(8x4) x H(4x3) + b(3x1) = Hypothesis
 # Shape은 일종의 Matrix의 다른 표현이다
 W = tf.Variable(tf.random_normal([4, nb_classes]), name='weight')
